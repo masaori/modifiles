@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["masaori@pankaku.com"]
   gem.description   = "Check and detect modified files using `git diff`"
   gem.summary       = "Check and detect modified files using `git diff`"
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/masaori/modifiles"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
