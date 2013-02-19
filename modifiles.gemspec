@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Modifiles::VERSION
   gem.authors       = ["masaori"]
   gem.email         = ["masaori@pankaku.com"]
-  gem.description   = "Check and detect modified files using git"
-  gem.summary       = "Check and detect modified files using git"
+  gem.description   = "Check and detect modified files using `git diff`"
+  gem.summary       = "Check and detect modified files using `git diff`"
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)

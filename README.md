@@ -1,6 +1,6 @@
 # Modifiles
 
-TODO: Write a gem description
+Check and detect modified files using `git diff`.
 
 ## Installation
 
@@ -18,12 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Stamp first:
 
-## Contributing
+	Modifiles::Checker.stamp_file_path = '/your/stamp/file_path'
+	Modifiles::Checker.stamp # Record latest git commit SHA
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Collect modified files after some commits:
+
+	Modifiles::Checker.modified_files # => ['/GIT_ROOT/files_modified', '/GIT_ROOT/since', '/GIT_ROOT/latest_commit_stamp']
