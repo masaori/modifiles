@@ -1,0 +1,1 @@
+require File.expand_path "#{File.basename(__FILE__)}/../lib/modifiles.rb"
